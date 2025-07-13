@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking form</title>
+  </head>
+
+  <body>
+    <h1>Schdule Your Holiday on Paradise Island</h1>
+    <form action="">
+        
+        
+        <fieldset>
+            <legend>Personal Info</legend>
+      <label for="name">First Name:</label>
+      <input
+        type="text"
+        name="full name"
+        id="name"
+        required
+        placeholder="Enter your full name"
+        autofocus
+        autocomplete="name"
+        autocorrect="on"
+      />
+
+      <br />
+      <br />
+
+      <label for="mail">Email:</label>
+      <input type="email" name="email" id="mail" />
+
+      <br /><br />
+      <label for="phone">Phone:</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        required
+        placeholder="Enter your phone number"
+        title="Format: +91-7896345612"
+      />
+      <br />
+      <br />
+
+      <label for="dob">Date Of Birth:</label>
+      <input
+        type="date"
+        name="dob"
+        id="dob"
+        required
+        min="1999-01-01"
+        max="2025-12-05"
+        title="Please enter a valid date of birth in the format YYYY-MM-DD"
+      />
+
+      </fieldset>
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>Booking Details</legend>
+      <label for="arrival">Arrival:</label>
+      <input type="datetime-local" name="arrival" id="arrival" required />
+      <br />
+      <br />
+
+      <label for="departure">Departure:</label>
+      <input type="datetime-local" name="departure" id="departure" required />
+      <br />
+      <br />
+
+      <label for="travelers">No. of Travellers</label>
+      <input
+        type="number"
+        name="travelers"
+        id="travelers"
+        required
+        min="1"
+        max="10"
+        step="1"
+        title="Please enter a valid number of travellers (1-10)"
+      />
+      <br />
+      <br />
+
+<label for="pref">Accomodation Preferences</label>
+<select name="pref" id="pref">
+    <optgroup label="Hotels">
+<option value="3-star">3-star</option>
+<option value="4-star">4-star</option>
+<option value="5-star">5-star</option>
+
+    </optgroup>
+        <option value="Standard">Standard</option>
+        <option value="Deluxe">Deluxe</option>
+        <option value="Suite" selected>Suite</option>
+        <option value="Presidential Suite">Presidential Suite</option>
+</select>
+<br> <br>
+      <fieldset><legend>Preferred Activities:</legend>
+      <!-- <br /> -->
+      <input
+        type="checkbox"
+        name="activities"
+        id="snorkeling"
+        value="Snorkeling"
+      />
+      <label for="snorkeling">Snorkeling</label>
+      <br />
+      <input type="checkbox" name="activities" id="hiking" value="hiking" />
+      <label for="hiking">Hiking</label>
+      <br />
+      <input type="checkbox" name="activities" id="spa" value="spa" />
+      <label for="spa">Spa</label>
+    </fieldset>
+      <br />
+      <label><b>Baby on Board?</b></label> <br />
+      <input type="radio" name="onboard" id="yes" value="yes" />
+      <label for="yes">Yes</label>
+      <input type="radio" name="onboard" id="no" value="no" />
+      <label for="no">No</label>
+
+      <br >
+
+      <p><b>Special Requests</b></p>
+      <textarea name="Special Requests" cols="50" rows="10"></textarea>
+</fieldset>
+      <br />
+      <br />
+
+      <!-- <input type="submit" name="submit" id="submit" value="Book Now" /> -->
+
+<button type="reset" >reset</button>
+<button type="submit" >submit</button>
+
+    </form>
+  </body>
+</html>
